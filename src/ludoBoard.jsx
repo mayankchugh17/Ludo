@@ -4,7 +4,8 @@ export default function LudoBoard(){
     let [moves, setMoves] = useState({blue:0, red:0, green:0, yellow:0})
 
     const updateBlue = () =>{
-        setMoves({...moves, blue: moves.blue += 1});
+        setMoves({...moves, blue: moves.blue += 1});           
+        // Here Deconstruct is being done using spread operator.  
     }
 
     const updateGreen = () =>{
